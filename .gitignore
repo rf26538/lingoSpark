@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Parcel build output
+dist/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Parcel cache
+.parcel-cache/
+
+# Coverage (if testing is added later)
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Optional: OS Junk
+desktop.ini
+
+# Optional: editor swap files
+*.swp
+*.swo

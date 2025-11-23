@@ -1,0 +1,28 @@
+{
+  "name": "lingospark",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rehan Fazal",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@reduxjs/toolkit": "^2.10.1",
+    "@tailwindcss/postcss": "^4.1.17",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.22.3",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^19.2.3",
+    "parcel": "^2.16.1",
+    "typescript": "^5.9.3"
+  }
+}
