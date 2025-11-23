@@ -1,6 +1,7 @@
 {
   "name": "lingospark",
   "version": "1.0.0",
+  "description": "LingoSpark is a web-based language learning platform that mirrors key features typically found in mobile apps like Duolingo:",
   "scripts": {
     "dev": "parcel index.html --open",
     "build": "parcel build index.html",
@@ -8,11 +9,10 @@
   },
   "author": "Rehan Fazal",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
-    "@reduxjs/toolkit": "^2.10.1",
+    "@reduxjs/toolkit": "^2.11.0",
     "@tailwindcss/postcss": "^4.1.17",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
