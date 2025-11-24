@@ -1,27 +1,20 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 import { useAppSelector } from "../store/hooks";
 
-interface ProtectedRouteProps {
-  children: React.ReactElement;
+interface Props {
   requireAdmin?: boolean;
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
-  children,
-  requireAdmin = false,
-}) => {
+const ProtectedRoute: React.FC<Props> = ({ requireAdmin = false }) => {
   const user = useAppSelector((state) => state.auth.user);
 
-  if (!user) {
-    return <Navigate to="/login" replace />;
-  }
+  if (!user) return <Navigate to="/login" replace />;
 
-  if (requireAdmin && user.role !== "admin") {
+  if (requireAdmin && user.role !== "admin")
     return <Navigate to="/" replace />;
-  }
 
-  return children;
+  return <Outlet />;
 };
 
 export default ProtectedRoute;
